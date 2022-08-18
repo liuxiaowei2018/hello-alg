@@ -1,0 +1,10 @@
+HELP.md
+target/
+.apt_generated
+.classpath
+.project
+.settings
+.idea
+build/
+.vscode/
+/logs/
