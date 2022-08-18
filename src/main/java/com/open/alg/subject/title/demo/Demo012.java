@@ -21,9 +21,10 @@ public class Demo012 {
 
     }
 
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
+
         public ListNode(int x) {
             val = x;
         }
@@ -42,7 +43,7 @@ public class Demo012 {
             if (head == null) {
                 head = tail = new ListNode(sum % 10);
             } else {
-                tail.next(new ListNode(sum % 10));
+                tail.next = new ListNode(sum % 10);
                 tail = tail.next;
             }
             carry = sum / 10;
@@ -55,7 +56,7 @@ public class Demo012 {
 
         }
         if (carry > 0) {
-            tail.next(new ListNode(carry));
+            tail.next = new ListNode(carry);
         }
         return head;
     }
