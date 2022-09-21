@@ -1,5 +1,6 @@
 package com.open.alg.category.datastructure.queue;
 
+
 import com.open.alg.category.datastructure.array.Array;
 
 /**
