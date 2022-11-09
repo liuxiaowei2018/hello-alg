@@ -1,7 +1,5 @@
 package com.open.alg.category.algorithm.limit;
 
-import lombok.extern.slf4j.Slf4j;
-
 /**
  * @author liuxiaowei
  * @date 2022年10月27日 13:29
@@ -9,7 +7,6 @@ import lombok.extern.slf4j.Slf4j;
  * 在单位时间内累加访问次数，当访问次数达到设定的阈值时，触发限流策略，当进入下一个单位时间时访问次数清零
  * 缺点: 临界问题（突刺现象）
  */
-@Slf4j
 public class CounterLimiter {
 
     public long timeStamp = getNowTime();

@@ -1,16 +1,14 @@
 package com.open.alg.category.algorithm.limit;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 
 /**
  * @author liuxiaowei
  * @date 2022年10月27日 13:39
  * @Description 令牌桶算法
  * 以恒定速率向令牌桶发送令牌，请求到达时，尝试从令牌桶中拿令牌，只有拿到令牌才能够放行，否则将会被拒绝。
- *  令牌桶大小固定，如果令牌桶被填满，则会丢弃新生成的要放进来的令牌，如果桶内没有令牌则触发限流策略
+ * 令牌桶大小固定，如果令牌桶被填满，则会丢弃新生成的要放进来的令牌，如果桶内没有令牌则触发限流策略
  */
-@Slf4j
 @Data
 public class TokenBucketLimiter {
 

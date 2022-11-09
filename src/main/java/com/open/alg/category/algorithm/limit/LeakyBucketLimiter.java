@@ -9,7 +9,6 @@ import lombok.extern.slf4j.Slf4j;
  * @Description 漏桶算法
  * 请求就像水一样以任意速度注入漏桶，桶会按照固定的速度将水漏掉。当注入速度持续大于漏出的速度时，漏桶会变满，此时新进入的请求将会被丢弃
  */
-@Slf4j
 @Data
 public class LeakyBucketLimiter {
 
